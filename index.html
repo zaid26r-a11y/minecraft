@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>VoxelCraft Ultimate</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%235B8C3B'/%3E%3Crect y='36' width='64' height='28' fill='%23724E2A'/%3E%3C/svg%3E">
+
+</head>
+
+<body>
+
+<canvas id="game"></canvas>
+
+<div id="overlay">
+
+    <div id="menu">
+
+        <h1>
+            VoxelCraft
+            <span>Ultimate</span>
+        </h1>
+
+        <button id="playButton">
+            Play
+        </button>
+
+        <button id="settingsButton">
+            Settings
+        </button>
+
+        <button id="aboutButton">
+            About
+        </button>
+
+        <button id="quitButton">
+            Quit
+        </button>
+
+        <div id="version">
+            Version 1.0
+        </div>
+
+    </div>
+
+</div>
+
+<div id="crosshair">
+    <div class="h"></div>
+    <div class="v"></div>
+</div>
+
+<div id="hud">
+
+    <div id="coords"></div>
+
+    <div id="fps"></div>
+
+    <div id="chunk"></div>
+
+    <div id="memory"></div>
+
+</div>
+
+<div id="hotbar">
+
+    <div class="slot selected"></div>
+    <div class="slot"></div>
+    <div class="slot"></div>
+    <div class="slot"></div>
+    <div class="slot"></div>
+    <div class="slot"></div>
+    <div class="slot"></div>
+    <div class="slot"></div>
+    <div class="slot"></div>
+
+</div>
+
+<div id="loadingScreen">
+
+    <h2>Generating World...</h2>
+
+    <div id="loadingBar">
+
+        <div id="loadingProgress"></div>
+
+    </div>
+
+</div>
+
+<div id="pauseMenu">
+
+    <div class="window">
+
+        <h2>Paused</h2>
+
+        <button id="resumeButton">
+            Resume
+        </button>
+
+        <button id="saveButton">
+            Save World
+        </button>
+
+        <button id="loadButton">
+            Load World
+        </button>
+
+        <button id="exitButton">
+            Exit to Menu
+        </button>
+
+    </div>
+
+</div>
+
+<div id="debugPanel">
+
+    <div id="debugText"></div>
+
+</div>
+
+<div id="inventory">
+
+    <div id="inventoryWindow">
+
+        <h2>Inventory</h2>
+
+        <div id="inventoryGrid"></div>
+
+    </div>
+
+</div>
+
+<audio id="bgMusic"
+       loop></audio>
+
+<audio id="blockBreak"></audio>
+
+<audio id="blockPlace"></audio>
+
+<audio id="footstep"></audio>
+
+<audio id="jump"></audio>
+
+<audio id="ambient"></audio>
+
+<script type="module" src="main.js"></script>
+
+</body>
+
+</html>
